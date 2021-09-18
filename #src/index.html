@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('_head.html',{
+	"title":"Главная"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('_header.html',{})
+			<main class="page">
+				<section class="section-hero hero">
+					<div class="hero__container _container">
+						<div class="hero__body">
+							<h1 class="hero__title">Influencer <span class="hero__title_color">Marketing</span> Under Ads</h1>
+							<div class="hero__subtitle">Mindul Influence — маркетинговое агентство полного цикла 
+								с креативный продакшеном. Работаем с каждым бизнесом, как со своим</div>
+						</div>
+					</div>
+					<div class="hero__image _ibg">
+						<img src="./img/bg-main.jpg" alt="Influencer Marketing Background">
+					</div>
+				</section>
+			</main>
+			@@include('_footer.html',{})
+		</div>
+		@@include('_popup.html',{})
+		@@include('_js.html',{})
+	</body>
+</html>
