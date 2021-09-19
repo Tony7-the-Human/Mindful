@@ -891,7 +891,12 @@ body.ie ._ibg img {
 .page-services {
   position: relative;
   background-color: #F2F9FD;
-  padding: 40px 0px 80px 0px;
+  padding: 40px 0px 130px 0px;
+}
+@media (max-width: 500px) {
+  .page-services {
+    padding: 0px 0px 35px 0px;
+  }
 }
 .page-services::before {
   content: "";
@@ -902,6 +907,14 @@ body.ie ._ibg img {
   right: 0;
   background-image: url(../img/triangle.svg);
   background-repeat: no-repeat;
+  background-size: 63px 59px;
+}
+@media (max-width: 767.98px) {
+  .page-services::before {
+    width: 22px;
+    height: 26px;
+    background-size: 22px 26px;
+  }
 }
 .page-services::after {
   content: "";
@@ -912,6 +925,23 @@ body.ie ._ibg img {
   left: 0;
   background-image: url(../img/triangle-b.svg);
   background-repeat: no-repeat;
+}
+@media (max-width: 767.98px) {
+  .page-services::after {
+    width: 38px;
+    height: 36px;
+    background-size: 38px 36px;
+  }
+}
+
+.page-working {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+@media (max-width: 590px) {
+  .page-working {
+    padding-top: 0;
+  }
 }
 
 /*---Hero Blok--------------------------------------------------------*/
@@ -1089,6 +1119,11 @@ body.ie ._ibg img {
 .services__header {
   padding: 50px 0px;
 }
+@media (max-width: 500px) {
+  .services__header {
+    padding: 35px;
+  }
+}
 .services__body {
   position: relative;
   display: flex;
@@ -1131,20 +1166,30 @@ body.ie ._ibg img {
   color: #000000;
   padding: 21px 0px;
 }
-.services__list__items {
+
+.service__list {
+  flex: 1 1 auto;
+}
+.service__list__items {
   font-family: Montserrat, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 125%;
   color: #000000;
 }
-.services__list li:not(:last-child) {
+.service__list li:not(:last-child) {
   padding-bottom: 10px;
 }
-.services__list li {
+.service__list li {
   position: relative;
+  margin-left: 50px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  color: #000000;
 }
-.services__list li::before {
+.service__list li::before {
   content: "";
   position: absolute;
   border: 2px solid #FF7761;
@@ -1153,6 +1198,10 @@ body.ie ._ibg img {
   border-radius: 50%;
   top: 4px;
   left: -20px;
+}
+.service__icon {
+  display: flex;
+  justify-content: center;
 }
 
 .header-blok__subtitle {
@@ -1164,3 +1213,323 @@ body.ie ._ibg img {
   color: #3E3E3E;
   padding-top: 30px;
 }
+@media (max-width: 500px) {
+  .header-blok__subtitle {
+    font-size: 24px;
+  }
+}
+
+.service__body {
+  margin: 0 auto;
+}
+
+.service__row {
+  display: flex;
+  justify-content: space-between;
+  margin: -22.5px -22.5px;
+}
+@media (max-width: 1050px) {
+  .service__row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.service__column {
+  padding: 22.5px 22.5px;
+  display: flex;
+}
+
+.service__item {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+}
+@media (max-width: 500px) {
+  .service__item {
+    align-items: center;
+  }
+}
+
+.service__label {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: inherit;
+  text-transform: uppercase;
+  line-height: 120.8333333333%;
+  color: #000000;
+  padding: 20px 0px;
+}
+@media (max-width: 1050px) {
+  .service__label {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+/*---Working Blok--------------------------------------------------------*/
+.working__title {
+  padding-top: 40px;
+}
+
+.working__body {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+@media (max-width: 1000px) {
+  .working__body {
+    display: block;
+  }
+}
+@media (max-width: 590px) {
+  .working__body {
+    margin-top: 50px;
+  }
+}
+.working__content {
+  flex: 0 1 50%;
+}
+
+.item-working {
+  position: relative;
+  max-width: 525px;
+}
+.item-working__title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 108.3333333333%;
+  color: #000000;
+}
+@media (max-width: 680px) {
+  .item-working__title {
+    font-size: 18px;
+  }
+}
+@media (max-width: 590px) {
+  .item-working__title {
+    font-size: 16px;
+  }
+}
+.item-working__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 133%;
+  color: #000000;
+}
+@media (max-width: 680px) {
+  .item-working__text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 590px) {
+  .item-working__text {
+    font-size: 14px;
+  }
+}
+
+.item-working > *:not(:last-child) {
+  padding-bottom: 15px;
+}
+
+.column {
+  box-sizing: border-box;
+  flex: 0 1 50%;
+  display: block;
+  position: relative;
+}
+
+.col-1 {
+  position: relative;
+  border-right: 6px solid #FF7862;
+  padding: 50px 90px 0px 15px;
+  display: block;
+}
+@media (max-width: 1000px) {
+  .col-1 {
+    border-right: none;
+    border-left: 6px solid #FF7862;
+    padding: 50px 90px 10px 80px;
+  }
+}
+@media (max-width: 680px) {
+  .col-1 {
+    padding: 30px 90px 10px 80px;
+  }
+}
+@media (max-width: 590px) {
+  .col-1 {
+    border-left: 4px solid #FF7862;
+    padding: 15px 0px 10px 50px;
+  }
+}
+
+.col-2 {
+  position: relative;
+  margin-left: 0px;
+  padding: 120px 15px 0px 110px;
+}
+@media (max-width: 1000px) {
+  .col-2 {
+    border-left: 6px solid #FF7862;
+    padding: 50px 15px 10px 80px;
+  }
+}
+@media (max-width: 680px) {
+  .col-2 {
+    padding: 30px 15px 10px 80px;
+  }
+}
+@media (max-width: 590px) {
+  .col-2 {
+    border-left: 4px solid #FF7862;
+    padding: 15px 15px 10px 50px;
+  }
+}
+
+.col-1::before {
+  content: "";
+  width: 50px;
+  height: 6px;
+  position: absolute;
+  top: 33%;
+  right: -2px;
+  background-color: #FF7862;
+}
+@media (max-width: 1000px) {
+  .col-1::before {
+    content: "";
+    width: 40px;
+    height: 6px;
+    position: absolute;
+    top: 38%;
+    left: -2px;
+    background-color: #FF7862;
+  }
+}
+@media (max-width: 590px) {
+  .col-1::before {
+    content: "";
+    width: 25px;
+    height: 4px;
+    position: absolute;
+    top: 27.5%;
+    left: -2px;
+    transform: translateY(-50%);
+    background-color: #FF7862;
+  }
+}
+
+.col-1::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 0%;
+  position: absolute;
+  top: 34%;
+  right: 45px;
+  transform: translateY(-50%) rotate(45deg);
+  background-color: #FF7862;
+}
+@media (max-width: 1000px) {
+  .col-1::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 0%;
+    position: absolute;
+    top: 40.5%;
+    left: 35px;
+    transform: translateY(-50%) rotate(45deg);
+    background-color: #FF7862;
+  }
+}
+@media (max-width: 590px) {
+  .col-1::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 0%;
+    position: absolute;
+    top: 27.5%;
+    left: 21px;
+    transform: translateY(-50%) rotate(45deg);
+    background-color: #FF7862;
+  }
+}
+
+.col-2::before {
+  content: "";
+  width: 50px;
+  height: 6px;
+  position: absolute;
+  top: 50.7%;
+  left: 0;
+  background-color: #FF7862;
+}
+@media (max-width: 1000px) {
+  .col-2::before {
+    content: "";
+    width: 40px;
+    height: 6px;
+    position: absolute;
+    top: 35%;
+    left: 0px;
+    background-color: #FF7862;
+  }
+}
+@media (max-width: 590px) {
+  .col-2::before {
+    content: "";
+    width: 20px;
+    height: 4px;
+    position: absolute;
+    top: 18.5%;
+    left: 0px;
+    transform: translateY(-50%);
+    background-color: #FF7862;
+  }
+}
+
+.col-2::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 0%;
+  position: absolute;
+  top: 51.5%;
+  left: 45px;
+  transform: translateY(-50%) rotate(45deg);
+  background-color: #FF7862;
+}
+@media (max-width: 1000px) {
+  .col-2::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 0%;
+    position: absolute;
+    top: 36.5%;
+    left: 39px;
+    transform: translateY(-50%) rotate(45deg);
+    background-color: #FF7862;
+  }
+}
+@media (max-width: 590px) {
+  .col-2::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 0%;
+    position: absolute;
+    top: 18.5%;
+    left: 18px;
+    transform: translateY(-50%) rotate(45deg);
+    background-color: #FF7862;
+  }
+}
+
+/*---Advantages Blok--------------------------------------------------------*/
