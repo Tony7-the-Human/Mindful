@@ -1,49 +1,50 @@
 <!DOCTYPE html>
 <html lang="ru">
- <head>
-	<title>Главная</title>
-	<meta charset="UTF-8">
-	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css">
-	<link rel="shortcut icon" href="favicon.ico">
-	<!-- <meta name="robots" content="noindex, nofollow"> -->
-	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <title>Главная</title>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- <meta name="robots" content="noindex, nofollow"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 </head>
 
-<body>
+<body id="body">
     <div class="wrapper">
         <header class="header">
-	<div class="header__container _container">
-		<div class="header__body">
-			<div class="header__main">
-				<a href="#" class="header__logo">MINDFUL</a>
-				<div class="header__menu menu">
-					<nav class="menu__body">
-						<ul class="menu__list">
-							<li class="menu__item"><a href="#" class="menu__link">Услуги</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Как мы работаем</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Преимущества</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Наша команда</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">С кем мы работаем</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-			<button type="button" class="icon-menu">
+    <div class="header__container _container">
+        <div class="header__body">
+            <div class="header__main">
+                <a href="#" class="header__logo">MINDFUL</a>
+                <div class="header__menu menu">
+                    <nav class="menu__body">
+                        <ul class="menu__list">
+                            <li class="menu__item"><a href="#services" class="menu__link">Услуги</a></li>
+                            <li class="menu__item"><a href="#working" class="menu__link">Как мы работаем</a></li>
+                            <li class="menu__item"><a href="#advantages" class="menu__link">Преимущества</a></li>
+                            <li class="menu__item"><a href="#team" class="menu__link">Наша команда</a></li>
+                            <li class="menu__item"><a href="#partners" class="menu__link">С кем мы работаем</a></li>
+                            <li class="menu__item"><a href="#footer" class="menu__link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <button type="button" class="icon-menu">
 				<span></span>
 				<span></span>
 				<span></span>
 			</button>
-		</div>
-	</div>
+        </div>
+    </div>
 </header>
         <main class="page">
             <section class="page-hero hero">
                 <div class="hero__container _container">
                     <div class="hero__body">
-                        <h1 class="hero__title">Influencer <span class="hero__title_color">Marketing</span> Under Ads</h1>
+                        <h1 id="hero" class="hero__title">Influencer <span class="hero__title_color">Marketing</span> Under Ads</h1>
                         <div class="hero__subtitle">Mindul Influence — маркетинговое агентство полного цикла с креативный продакшеном. Работаем с каждым бизнесом, как со своим</div>
                     </div>
                 </div>
@@ -53,7 +54,7 @@
             </section>
             <section class="page-counters counters">
                 <div class="counters__container _container">
-                    <h2 class="counters__title title">Мы в цифрах</h2>
+                    <h2 id="counters" class="counters__title title">Мы в цифрах</h2>
                     <div class="counters__body">
                         <div class="counters__column">
                             <div class="counters__item">
@@ -97,7 +98,7 @@
             <section class="page-services services">
                 <div class="services__container _container">
                     <div class="services__header header-blok">
-                        <div class="header-blok__title title">Услуги</div>
+                        <h2 id="services" class="header-blok__title title">Услуги</h2>
                         <div class="header-blok__subtitle">Мы предлагаем</div>
                     </div>
                     <div class="service">
@@ -158,7 +159,7 @@
             </section>
             <section class="page-working working">
                 <div class="working__container _container">
-                    <h2 class="working__title title">Как мы работаем</h2>
+                    <h2 id="working" class="working__title title">Как мы работаем</h2>
                     <div class="working__body">
                         <div class="working__content col-1">
                             <div class="working__column">
@@ -214,11 +215,201 @@
                     </div>
                 </div>
             </section>
+            <section class="page-advantages advantages">
+                <div class="advantages__container _container">
+                    <h2 id="advantages" class="advantages__title title">Преимущества</h2>
+                    <div class="advantages__body">
+                        <div class="advantages__column">
+                            <div class="advantages__item">
+                                <div class="advantages__icon">
+                                    <img src="./img/advantages-image/1advant.svg" alt="Advantages 1">
+                                </div>
+                                <div class="advantages__text">Умеем много, работаем системно
+                                </div>
+                                <div class="advantages__subtext">Комплексно подходим к каждой задаче: анализируем рынок, подбираем подходящие бизнесу и его целям инструменты и каналы продвижения, продумываем коммуникацию, въедливо настраиваем кампанию и корректируем её в процессе
+                                </div>
+                            </div>
+                        </div>
+                        <div class="advantages__column">
+                            <div class="advantages__item">
+                                <div class="advantages__icon">
+                                    <img src="./img/advantages-image/2advant.svg" alt="Advantages 2">
+                                </div>
+                                <div class="advantages__text">Дружим с любым бизнесом
+
+                                </div>
+                                <div class="advantages__subtext">Работаем с бизнесом любого масштаба: от инстаграм-пекарни до b2b продукта с длинным циклом заявки
+                                </div>
+                            </div>
+                        </div>
+                        <div class="advantages__column">
+                            <div class="advantages__item">
+                                <div class="advantages__icon">
+                                    <img src="./img/advantages-image/adv-3.svg" alt="Advantages 2 3">
+                                </div>
+                                <div class="advantages__text">Быстро стартуем
+                                </div>
+                                <div class="advantages__subtext">Первые заказы пойдут ещё до того, как успеете сказать «‎черничный пирог»
+                                </div>
+                            </div>
+                        </div>
+                        <div class="advantages__column">
+                            <div class="advantages__item">
+                                <div class="advantages__icon">
+                                    <img src="./img/advantages-image/adv-4.svg" alt="Advantages 4">
+                                </div>
+                                <div class="advantages__text">Настраиваем тотальную аналитику
+                                </div>
+                                <div class="advantages__subtext">Администрирование серверов и серверных приложений, оптимизация работы оборудования, наблюдение за функционированием сетевых устройств
+                                </div>
+                            </div>
+                        </div>
+                        <div class="advantages__column">
+                            <div class="advantages__item">
+                                <div class="advantages__icon">
+                                    <img src="./img/advantages-image/adv-5.svg" alt="Advantages 5">
+                                </div>
+                                <div class="advantages__text">Прозрачно формируем бюджет
+                                </div>
+                                <div class="advantages__subtext">Детально раскрываем ценообразование и агентские комиссии, KPI фиксируем в договоре
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page-team team">
+                <div class="team__container _container">
+                    <h2 id="team" class="team__title title">Наша команда</h2>
+                    <div class=" slider team__body">
+                        <div class="team__column">
+                            <div class="team__item">
+                                <div class="team__icon">
+                                    <img src="./img/team-image/person-1.png" alt="worker 1">
+                                </div>
+                                <div class="team__job">Сергей</div>
+                                <div class="team__name">старший системный администратор</div>
+                            </div>
+                        </div>
+                        <div class="team__column">
+                            <div class="team__item">
+                                <div class="team__icon _ibg">
+                                    <img src="./img/team-image/person-1.png" alt="worker 1">
+                                </div>
+                                <div class="team__job">Сергей</div>
+                                <div class="team__name">старший системный администратор</div>
+                            </div>
+                        </div>
+                        <div class="team__column">
+                            <div class="team__item">
+                                <div class="team__icon _ibg">
+                                    <img src="./img/team-image/person-1.png" alt="worker 1">
+                                </div>
+                                <div class="team__job">Сергей</div>
+                                <div class="team__name">старший системный администратор</div>
+                            </div>
+                        </div>
+                        <div class="team__column">
+                            <div class="team__item">
+                                <div class="team__icon _ibg">
+                                    <img src="./img/team-image/person-1.png" alt="worker 1">
+                                </div>
+                                <div class="team__job">Сергей</div>
+                                <div class="team__name">старший системный администратор</div>
+                            </div>
+                        </div>
+                        <div class="team__column">
+                            <div class="team__item">
+                                <div class="team__icon _ibg">
+                                    <img src="./img/team-image/person-1.png" alt="worker 1">
+                                </div>
+                                <div class="team__job">Сергей</div>
+                                <div class="team__name">старший системный администратор</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page-partners partners">
+                <div class="partners__container _container">
+                    <h2 id="partners" class="partners__title title">С кем мы работаем</h2>
+                    <div class="partners__body">
+                        <div class="partners__column">
+                            <div class="partners__item">
+                                <div class="partners__icon">
+                                    <img src="./img/company-image/finn-flare.png" alt="Finn Flare">
+                                </div>
+                                <div class="partners__subtext">Finn Flare
+                                </div>
+                            </div>
+                        </div>
+                        <div class="partners__column">
+                            <div class="partners__item">
+                                <div class="partners__icon">
+                                    <img src="./img/company-image/synergetics.png" alt="Synergetics">
+                                </div>
+                                <div class="partners__subtext">Synergetics
+                                </div>
+                            </div>
+                        </div>
+                        <div class="partners__column">
+                            <div class="partners__item">
+                                <div class="partners__icon">
+                                    <img src="./img/company-image/qiwi.png" alt="QIWI">
+                                </div>
+                                <div class="partners__subtext">QIWI
+                                </div>
+                            </div>
+                        </div>
+                        <div class="partners__column">
+                            <div class="partners__item">
+                                <div class="partners__icon">
+                                    <img src="./img/company-image/maps-me.png" alt="Maps.Me">
+                                </div>
+                                <div class="partners__subtext">Maps.Me
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer class="footer">
-	<div class="footer__container _container">
-
-	</div>
+    <div class="footer__container _container">
+        <h2 id="footer" class="footer__title">Контакты</h2>
+        <div class="footer__body">
+            <div class="form">
+                <h3 class="form__subtitle">Оставьте Ваши контакты</h3>
+                <form action="#" id="form" class="form__body">
+                    <div class="form__item">
+                        <label for="formName" class="form__label">Имя</label>
+                        <input id="formName" type="text" name="name" class="form__input _req">
+                    </div>
+                    <div class="form__item">
+                        <label for="formEmail" class="form__label">E-mail</label>
+                        <input id="formEmail" type="text" name="email" class="form__input _req _email">
+                    </div>
+                    <div class="form__item">
+                        <label for="formTel" class="form__label">Телефон</label>
+                        <input id="formTel" type="text" name="email" class="form__input _email">
+                    </div>
+                    <div class="form__item">
+                        <label for="formMessage" class="form__label">Сообщение:</label>
+                        <textarea name="message" id="formMessage" class="form__input"></textarea>
+                    </div>
+                    <button type="submit" class="form__button">Отправить</button>
+                </form>
+            </div>
+            <div class="footer__maps">
+                <h3 class="maps__subtitle">Или приезжайте в гости</h3>
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3b0494ea8969359f5b73f9947ed63b2ac579ec97978d9def0e5e20847b91c7eb&amp;width=auto&height=350&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+        </div>
+        <a href="#" class="footer__politics">Политика работы с персональными данными</a>
+    </div>
+    <div class="hero__image _ibg">
+        <img src="./img/bg-footer.jpg" alt="Influencer Marketing Background">
+    </div>
 </footer>
     </div>
     <div class="popup popup_popup">
@@ -245,8 +436,44 @@
 </div>
  <!-- Swiper -->
 <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/vendors.min.js"></script>
 <script src="js/app.min.js"></script>
+<script>
+    $('.slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: true,
+        autoplay: false,
+        autoplaySpeed: 2000,
+        responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: false,
+                }
+            }, {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            }, {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+    });
+</script>
 </body>
 
 </html>

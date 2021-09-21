@@ -2,14 +2,14 @@
 <html lang="ru">
 @@include('_head.html',{ "title":"Главная" })
 
-<body>
+<body id="body">
     <div class="wrapper">
         @@include('_header.html',{})
         <main class="page">
             <section class="page-hero hero">
                 <div class="hero__container _container">
                     <div class="hero__body">
-                        <h1 class="hero__title">Influencer <span class="hero__title_color">Marketing</span> Under Ads</h1>
+                        <h1 id="hero" class="hero__title">Influencer <span class="hero__title_color">Marketing</span> Under Ads</h1>
                         <div class="hero__subtitle">Mindul Influence — маркетинговое агентство полного цикла с креативный продакшеном. Работаем с каждым бизнесом, как со своим</div>
                     </div>
                 </div>
@@ -19,7 +19,7 @@
             </section>
             <section class="page-counters counters">
                 <div class="counters__container _container">
-                    <h2 class="counters__title title">Мы в цифрах</h2>
+                    <h2 id="counters" class="counters__title title">Мы в цифрах</h2>
                     <div class="counters__body">
                         <div class="counters__column">
                             <div class="counters__item">
@@ -63,7 +63,7 @@
             <section class="page-services services">
                 <div class="services__container _container">
                     <div class="services__header header-blok">
-                        <div class="header-blok__title title">Услуги</div>
+                        <h2 id="services" class="header-blok__title title">Услуги</h2>
                         <div class="header-blok__subtitle">Мы предлагаем</div>
                     </div>
                     <div class="service">
@@ -124,7 +124,7 @@
             </section>
             <section class="page-working working">
                 <div class="working__container _container">
-                    <h2 class="working__title title">Как мы работаем</h2>
+                    <h2 id="working" class="working__title title">Как мы работаем</h2>
                     <div class="working__body">
                         <div class="working__content col-1">
                             <div class="working__column">
@@ -174,6 +174,164 @@
                                     </h3>
                                     <p class="item-working__text">Анализируем результат, подробно рассказываем о проделанной работе с графиками, цифрами и мемами. Предлагаем улучшения, готовим к запуску новую кампанию
                                     </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page-advantages advantages">
+                <div class="advantages__container _container">
+                    <h2 id="advantages" class="advantages__title title">Преимущества</h2>
+                    <div class="advantages__body">
+                        <div class="advantages__column">
+                            <div class="advantages__item">
+                                <div class="advantages__icon">
+                                    <img src="./img/advantages-image/1advant.svg" alt="Advantages 1">
+                                </div>
+                                <div class="advantages__text">Умеем много, работаем системно
+                                </div>
+                                <div class="advantages__subtext">Комплексно подходим к каждой задаче: анализируем рынок, подбираем подходящие бизнесу и его целям инструменты и каналы продвижения, продумываем коммуникацию, въедливо настраиваем кампанию и корректируем её в процессе
+                                </div>
+                            </div>
+                        </div>
+                        <div class="advantages__column">
+                            <div class="advantages__item">
+                                <div class="advantages__icon">
+                                    <img src="./img/advantages-image/2advant.svg" alt="Advantages 2">
+                                </div>
+                                <div class="advantages__text">Дружим с любым бизнесом
+
+                                </div>
+                                <div class="advantages__subtext">Работаем с бизнесом любого масштаба: от инстаграм-пекарни до b2b продукта с длинным циклом заявки
+                                </div>
+                            </div>
+                        </div>
+                        <div class="advantages__column">
+                            <div class="advantages__item">
+                                <div class="advantages__icon">
+                                    <img src="./img/advantages-image/adv-3.svg" alt="Advantages 2 3">
+                                </div>
+                                <div class="advantages__text">Быстро стартуем
+                                </div>
+                                <div class="advantages__subtext">Первые заказы пойдут ещё до того, как успеете сказать «‎черничный пирог»
+                                </div>
+                            </div>
+                        </div>
+                        <div class="advantages__column">
+                            <div class="advantages__item">
+                                <div class="advantages__icon">
+                                    <img src="./img/advantages-image/adv-4.svg" alt="Advantages 4">
+                                </div>
+                                <div class="advantages__text">Настраиваем тотальную аналитику
+                                </div>
+                                <div class="advantages__subtext">Администрирование серверов и серверных приложений, оптимизация работы оборудования, наблюдение за функционированием сетевых устройств
+                                </div>
+                            </div>
+                        </div>
+                        <div class="advantages__column">
+                            <div class="advantages__item">
+                                <div class="advantages__icon">
+                                    <img src="./img/advantages-image/adv-5.svg" alt="Advantages 5">
+                                </div>
+                                <div class="advantages__text">Прозрачно формируем бюджет
+                                </div>
+                                <div class="advantages__subtext">Детально раскрываем ценообразование и агентские комиссии, KPI фиксируем в договоре
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page-team team">
+                <div class="team__container _container">
+                    <h2 id="team" class="team__title title">Наша команда</h2>
+                    <div class=" slider team__body">
+                        <div class="team__column">
+                            <div class="team__item">
+                                <div class="team__icon">
+                                    <img src="./img/team-image/person-1.png" alt="worker 1">
+                                </div>
+                                <div class="team__job">Сергей</div>
+                                <div class="team__name">старший системный администратор</div>
+                            </div>
+                        </div>
+                        <div class="team__column">
+                            <div class="team__item">
+                                <div class="team__icon _ibg">
+                                    <img src="./img/team-image/person-1.png" alt="worker 1">
+                                </div>
+                                <div class="team__job">Сергей</div>
+                                <div class="team__name">старший системный администратор</div>
+                            </div>
+                        </div>
+                        <div class="team__column">
+                            <div class="team__item">
+                                <div class="team__icon _ibg">
+                                    <img src="./img/team-image/person-1.png" alt="worker 1">
+                                </div>
+                                <div class="team__job">Сергей</div>
+                                <div class="team__name">старший системный администратор</div>
+                            </div>
+                        </div>
+                        <div class="team__column">
+                            <div class="team__item">
+                                <div class="team__icon _ibg">
+                                    <img src="./img/team-image/person-1.png" alt="worker 1">
+                                </div>
+                                <div class="team__job">Сергей</div>
+                                <div class="team__name">старший системный администратор</div>
+                            </div>
+                        </div>
+                        <div class="team__column">
+                            <div class="team__item">
+                                <div class="team__icon _ibg">
+                                    <img src="./img/team-image/person-1.png" alt="worker 1">
+                                </div>
+                                <div class="team__job">Сергей</div>
+                                <div class="team__name">старший системный администратор</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page-partners partners">
+                <div class="partners__container _container">
+                    <h2 id="partners" class="partners__title title">С кем мы работаем</h2>
+                    <div class="partners__body">
+                        <div class="partners__column">
+                            <div class="partners__item">
+                                <div class="partners__icon">
+                                    <img src="./img/company-image/finn-flare.png" alt="Finn Flare">
+                                </div>
+                                <div class="partners__subtext">Finn Flare
+                                </div>
+                            </div>
+                        </div>
+                        <div class="partners__column">
+                            <div class="partners__item">
+                                <div class="partners__icon">
+                                    <img src="./img/company-image/synergetics.png" alt="Synergetics">
+                                </div>
+                                <div class="partners__subtext">Synergetics
+                                </div>
+                            </div>
+                        </div>
+                        <div class="partners__column">
+                            <div class="partners__item">
+                                <div class="partners__icon">
+                                    <img src="./img/company-image/qiwi.png" alt="QIWI">
+                                </div>
+                                <div class="partners__subtext">QIWI
+                                </div>
+                            </div>
+                        </div>
+                        <div class="partners__column">
+                            <div class="partners__item">
+                                <div class="partners__icon">
+                                    <img src="./img/company-image/maps-me.png" alt="Maps.Me">
+                                </div>
+                                <div class="partners__subtext">Maps.Me
                                 </div>
                             </div>
                         </div>

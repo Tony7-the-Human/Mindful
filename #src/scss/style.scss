@@ -133,12 +133,103 @@ body {
     }
 }
 
+.page-advantages {
+    position: relative;
+    background-color: #F2F9FD;
+    padding: 40px 0px 130px 0px;
+    @media (max-width: 500px) {
+        padding: 40px 0px 50px 0px;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        width: 63px;
+        height: 59px;
+        top: 2px;
+        left: -1px;
+        transform: rotate(-90deg);
+        background-image: url(../img/triangle.svg);
+        background-repeat: no-repeat;
+        background-size: 63px 59px;
+        @media (max-width: $md3+px) {
+            width: 22px;
+            height: 26px;
+            background-size: 22px 26px;
+        }
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        width: 105px;
+        height: 102px;
+        bottom: 2px;
+        right: -1px;
+        transform: rotate(-90deg);
+        background-image: url(../img/triangle-b.svg);
+        background-repeat: no-repeat;
+        @media (max-width: $md3+px) {
+            width: 38px;
+            height: 36px;
+            background-size: 38px 36px;
+        }
+    }
+}
+
+.page-partners {
+    position: relative;
+    background-color: #F2F9FD;
+    padding: 40px 0px 130px 0px;
+    @media (max-width: 768px) {
+        padding: 40px 0px 50px 0px;
+    }
+    @media (max-width: 500px) {
+        padding: 0px 0px 50px 0px;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        width: 63px;
+        height: 59px;
+        top: 0;
+        right: 0;
+        background-image: url(../img/triangle.svg);
+        background-repeat: no-repeat;
+        background-size: 63px 59px;
+        @media (max-width: $md3+px) {
+            width: 22px;
+            height: 26px;
+            background-size: 22px 26px;
+        }
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        width: 105px;
+        height: 102px;
+        bottom: 0;
+        left: 0;
+        background-image: url(../img/triangle-b.svg);
+        background-repeat: no-repeat;
+        @media (max-width: $md3+px) {
+            width: 38px;
+            height: 36px;
+            background-size: 38px 36px;
+        }
+    }
+}
+
+.page-team {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 //</ОСНОВНОЙ БЛОК>====================================================================================================
 
 /*---Hero Blok--------------------------------------------------------*/
 
 .hero {
     position: relative;
+    background-color: #7bb5db;
 }
 
 .hero__body {
@@ -704,3 +795,284 @@ body {
 
 
 /*---Advantages Blok--------------------------------------------------------*/
+
+.advantages {
+    &__title {
+        margin-bottom: 135px;
+        @media (max-width: 500px) {
+            margin-bottom: 100px;
+        }
+    }
+    // .advantages__body
+    &__body {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 -15px -90px;
+        @media (max-width: 700px) {
+            margin: 0 -15px -60px;
+        }
+    }
+    // .advantages__column
+    &__column {
+        padding: 0 15px 90px;
+        flex: 0 1 33.333%;
+        @media (max-width: 1000px) {
+            flex: 0 1 50%;
+        }
+        @media (max-width: 700px) {
+            flex: 0 1 100%;
+            padding: 0 15px 60px;
+        }
+    }
+    // .advantages__item
+    &__item {
+        background: #FFFFFF;
+        border-radius: 6px;
+        padding: 30px;
+        text-align: left;
+        box-shadow: 3px 3px 4px rgba(145, 199, 233, 0.28);
+        height: 100%;
+    }
+    &__item>*:not(:last-child) {
+        padding-bottom: 30px;
+        @media (max-width: 700px) {
+            padding-bottom: 25px;
+        }
+    }
+    // .advantages__icon
+    &__icon {
+        position: relative;
+        margin-top: -60px;
+        height: 183px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        @media (max-width: 700px) {
+            margin-top: -40px;
+        }
+    }
+    // .advantages__value
+    &__text {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 136%;
+        color: #000000;
+        @media (max-width: 700px) {
+            font-size: 18px;
+        }
+    }
+    // .advantages__text
+    &__subtext {
+        font-size: 16px;
+        line-height: 150%;
+        color: #000000;
+    }
+}
+
+
+/*---Team  Blok--------------------------------------------------------*/
+
+.team {
+    &__title {
+        margin-bottom: 80px;
+        @media (max-width: 500px) {
+            margin-bottom: 50px;
+        }
+    }
+    // .advantages__body
+    &__body {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        // margin: 0 -15px -30px;
+    }
+    // .advantages__column
+    &__column {
+        padding: 0 15px 30px;
+        flex: 0 1 25%;
+        @media (max-width: 1000px) {
+            flex: 0 1 50%;
+        }
+        @media (max-width: 500px) {
+            flex: 0 1 100%;
+        }
+    }
+    // .advantages__item
+    &__item {
+        background-color: #fff;
+        padding: 30px;
+        text-align: center;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__item>*:not(:last-child) {
+        padding-bottom: 10px;
+    }
+    // .advantages__icon
+    &__icon {
+        width: 190px;
+        height: 193px;
+        display: flex;
+        border-radius: 50%;
+        align-items: flex-end;
+        justify-content: center;
+        object-fit: cover;
+    }
+    &__icon img {
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    // .advantages__value
+    &__job {
+        font-family: Montserrat, sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: calc(57/40*100%);
+        letter-spacing: 0.2px;
+        color: #FF7862;
+    }
+    // .advantages__text
+    &__name {
+        font-size: 16px;
+        line-height: 120%;
+        text-align: center;
+        color: #20A0C9;
+    }
+}
+
+.slider {
+    position: relative;
+}
+
+// .slick-next {
+//     background-image: url(../img/arrow-next.svg);
+//     background-repeat: no-repeat;
+//     background-size: 17px 16px;
+//     background-position: center;
+// }
+// .slick-prev {
+//     background-image: url(../img/arrow-prev.svg);
+//     background-repeat: no-repeat;
+//     background-size: 17px 16px;
+//     background-position: center;
+// }
+.slick-next {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #fff;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 100%;
+    background-image: url(../img/arrow-next.svg);
+    background-repeat: no-repeat;
+    background-size: 17px 16px;
+    background-position: center;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    text-indent: -9999px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    z-index: 999;
+    &:hover {
+        background-color: #FF7862;
+        border: 1px solid #FF7862;
+        background-image: url(../img/arrow-2.svg);
+    }
+}
+
+.slick-prev {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #fff;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    background-image: url(../img/arrow-prev-1.svg);
+    background-repeat: no-repeat;
+    background-size: 17px 16px;
+    background-position: center;
+    top: 50%;
+    left: 0;
+    background-repeat: no-repeat;
+    transform: translateY(-50%);
+    text-indent: -9999px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+    transition: 0.3s ease;
+    cursor: pointer;
+    z-index: 999;
+    &:hover {
+        background-color: #FF7862;
+        border: 1px solid #FF7862;
+        background-image: url(../img/arrow-1.svg);
+    }
+}
+
+
+/*---Partners  Blok--------------------------------------------------------*/
+
+.partners {
+    &__title {
+        margin-bottom: 80px;
+        @media (max-width: 500px) {
+            padding-top: 15px;
+            margin-bottom: 50px;
+        }
+    }
+    // .advantages__body
+    &__body {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px -30px;
+    }
+    // .advantages__column
+    &__column {
+        padding: 0 15px 30px;
+        flex: 0 1 25%;
+        @media (max-width: 1000px) {
+            flex: 0 1 50%;
+        }
+        @media (max-width: 500px) {
+            flex: 0 1 100%;
+        }
+    }
+    // .advantages__item
+    &__item {
+        background-color: #fff;
+        text-align: center;
+        height: 100%;
+    }
+    &__item>*:not(:last-child) {
+        padding-bottom: 5px;
+    }
+    // .advantages__icon
+    &__icon {
+        background-color: #fff;
+        min-height: 220px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    // .advantages__text
+    &__subtext {
+        font-family: Montserrat, sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        background: #fff;
+        line-height: 150%;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: #737373;
+        border-top: 2px solid #E8E8E8;
+        padding: 15px 30px;
+    }
+}
