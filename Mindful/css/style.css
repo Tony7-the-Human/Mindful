@@ -945,6 +945,12 @@ body.ie ._ibg img {
   color: #fff;
 }
 
+.header__main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
 .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -970,12 +976,20 @@ body.ie ._ibg img {
   line-height: 92.3076923077%;
 }
 
-.icon-menu {
-  display: none;
+.menu__phone {
+  position: relative;
+  padding-right: 30px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 160%;
+  letter-spacing: 0.3px;
+  color: #FFFFFF;
+  z-index: 6;
 }
 
-footer {
-  background-color: #094c79;
+.icon-menu {
+  display: none;
 }
 
 .footer {
@@ -1320,7 +1334,6 @@ textarea.form__input {
 
 .hero {
   position: relative;
-  background-color: #7bb5db;
 }
 
 .hero__body {
@@ -2284,6 +2297,19 @@ textarea.form__input {
   .select__options {
     font-size: 18px;
   }
+
+  .menu__phone {
+    text-indent: -9999px;
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+    background-color: transparent;
+    background-size: 33px 23px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 100%;
+    background-image: url(../img/icons/phone-call.svg);
+  }
 }
 
 @media (max-width: 900px) {
@@ -2411,7 +2437,7 @@ textarea.form__input {
 @media (max-width: 600px) {
   .footer__politics {
     padding-bottom: 15px;
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
   }
 }
