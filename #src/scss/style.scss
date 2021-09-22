@@ -87,7 +87,6 @@ body {
 
 .page-services {
     position: relative;
-    background-color: #F2F9FD;
     padding: 40px 0px 130px 0px;
     @media (max-width: 500px) {
         padding: 0px 0px 35px 0px;
@@ -932,6 +931,7 @@ body {
         font-size: 20px;
         line-height: calc(57/40*100%);
         letter-spacing: 0.2px;
+        padding-top: 15px;
         color: #FF7862;
     }
     // .advantages__text

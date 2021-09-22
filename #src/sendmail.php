@@ -11,11 +11,11 @@
 	$mail->IsHTML(true);
 
 	//От кого письмо
-	$mail->setFrom('Test', 'Тест');
+	$mail->setFrom('555', 'Фрилансер по жизни');
 	//Кому отправить
 	$mail->addAddress('mrfox88@yandex.ru');
 	//Тема письма
-	$mail->Subject = 'Привет! Тест';
+	$mail->Subject = 'Привет! Это "Фрилансер по жизни"';
 
 	
 
@@ -38,7 +38,6 @@
 	if(trim(!empty($_POST['message']))){
 		$body.='<p><strong>Сообщение:</strong> '.$_POST['message'].'</p>';
 	}
-	
 	
 
 	$mail->Body = $body;

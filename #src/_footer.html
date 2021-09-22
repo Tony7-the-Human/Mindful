@@ -4,7 +4,14 @@
         <div class="footer__body">
             <div class="form">
                 <h3 class="form__subtitle">Оставьте Ваши контакты</h3>
-                <form action="#" id="form" class="form__body">
+                <form data-ajax="true" action="mail.php" id="form" class="form__body" enctype="multipart/form-data" method="POST">
+                    <!-- Hidden Required Fields -->
+                    <input type="hidden" name="project_name" value="Mindful">
+                    <!-- Вместо mrfox88@yandex.ru вставить адрес желаемой почты, на которую Вы бы хотели, чтобы шли сообщения посетителей, отправленные с формы -->
+                    <input type="hidden" name="admin_email[]" value="mrfox88@yandex.ru">
+                    <!-- Заголвок письма, которое будет приходить на почту, когда данные с формы будут отправлены. Также можно менять! -->
+                    <input type="hidden" name="form_subject" value="Отзыв с сайта Mindful">
+                    <!-- END Hidden Required Fields -->
                     <div class="form__item">
                         <label for="formName" class="form__label">Имя</label>
                         <input id="formName" type="text" name="name" class="form__input _req">
@@ -32,6 +39,6 @@
         <a href="#" class="footer__politics">Политика работы с персональными данными</a>
     </div>
     <div class="hero__image _ibg">
-        <img src="./img/bg-footer.jpg" alt="Influencer Marketing Background">
+        <img src="img/bgfooter.jpg" alt="Influencer Marketing Background">
     </div>
 </footer>
