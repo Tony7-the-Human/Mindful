@@ -1,16 +1,17 @@
 <footer class="footer">
     <div class="footer__container _container">
         <h2 id="footer" class="footer__title">Контакты</h2>
-
         <div class="footer__body">
             <div class="form">
                 <h3 class="form__subtitle">Оставьте Ваши контакты</h3>
                 <form data-ajax="true" action="mail.php" id="form" class="form__body" enctype="multipart/form-data" method="POST">
                     <!-- Hidden Required Fields -->
                     <input type="hidden" name="project_name" value="Mindful">
-                    <!-- Вместо mrfox88@yandex.ru вставить адрес желаемой почты, на которую Вы бы хотели, чтобы шли сообщения посетителей, отправленные с формы -->
+                    <!-- Вместо "mrfox88@yandex.ru" в строке ниже в поле value="" вставить адрес желаемой почты, на которую Вы бы хотели, чтобы шли сообщения посетителей, отправленные с формы -->
                     <input type="hidden" name="admin_email[]" value="mrfox88@yandex.ru">
-                    <!-- Заголвок письма, которое будет приходить на почту, когда данные с формы будут отправлены. Также можно менять! -->
+                    <!-- Вместо "8 (999) 123-45-67" в строке ниже в поле value="" вставьте свой номер телефона -->
+                    <input type="hidden" name="admin_tel[]" value="8 (999) 123-45-67">
+                    <!-- Заголвок письма, которое будет приходить на почту, когда данные с формы будут отправлены. Также можно менять, записав нужный текст в стрке ниже в поле value=""! -->
                     <input type="hidden" name="form_subject" value="Отзыв с сайта Mindful">
                     <!-- END Hidden Required Fields -->
                     <div class="form__item">
@@ -23,7 +24,7 @@
                     </div>
                     <div class="form__item">
                         <label for="formTel" class="form__label">Телефон</label>
-                        <input id="formTel" type="text" name="email" class="form__input _email">
+                        <input id="formTel" type="text" name="tel" class="form__input _tel">
                     </div>
                     <div class="form__item">
                         <label for="formMessage" class="form__label">Сообщение:</label>

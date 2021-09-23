@@ -900,7 +900,7 @@ body.ie ._ibg img {
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  background-color: #fff;
+  background-color: #F2F9FD;
   padding: 50px;
   width: 100%;
   max-width: 800px;
@@ -915,6 +915,13 @@ body.ie ._ibg img {
   cursor: pointer;
   z-index: 30;
   background: url("../img/icons/close.svg") 0 0 no-repeat;
+}
+
+.popup__text {
+  text-align: center;
+  font-size: 16px;
+  line-height: 133%;
+  font-weight: 500;
 }
 
 .header {
@@ -1230,6 +1237,7 @@ textarea.form__input {
 
 .page-services {
   position: relative;
+  background-color: #F2F9FD;
   padding: 40px 0px 130px 0px;
 }
 
