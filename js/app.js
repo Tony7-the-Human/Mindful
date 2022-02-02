@@ -828,7 +828,53 @@ animate({
             Element.prototype.msMatchesSelector;
     }
 })();
+let btn = document.querySelector('.form__button')
+let modalOverlay = document.querySelector('.modal-overlay')
+let modalCloseBtn = document.querySelector('.modal__close')
 
+
+
+btn.addEventListener('click', openModal)
+modalOverlay.addEventListener('click', closeModal)
+
+function openModal() {
+    btn.addEventListener('click', (e) => {
+        let path = e.currentTarget.getAttribute('data-path')
+        modalOverlay.classList.add('modal-overlay--visible')
+        document.querySelector(`[data-target="${path}"]`).classList.add('modal--visible')
+
+    });
+}
+
+function closeModal() {
+    modalOverlay.addEventListener('click', (e) => {
+        if (e.target == modalOverlay || e.target == modalCloseBtn) {
+            modalOverlay.classList.remove('modal-overlay--visible')
+        }
+    });
+}
+
+const btnInput = document.querySelector('.modal__btn')
+
+btnInput.addEventListener('click', myFunction)
+
+
+
+function myFunction() {
+    /* Get the text field */
+    let copyText = document.getElementById("myInput");
+    let output = document.querySelector('.output')
+        /* Select the text field */
+    copyText.select();
+
+    /* Copy the text inside the text field */
+    document.execCommand("copy");
+
+    /* Alert the copied text */
+    // alert("Copied the text: " + copyText.value);
+
+    output.innerHTML = `Текст ${copyText.value} скопирован в буфер обмена:`
+}
 //let btn = document.querySelectorAll('button[type="submit"],input[type="submit"]');
 let forms = document.querySelectorAll('form');
 if (forms.length > 0) {
